@@ -1,12 +1,6 @@
 import copy
-import time
-import math
-import random
 import multiprocessing
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 
 # ******************************** CLASSES ***********************************
 class kNN:
@@ -151,7 +145,6 @@ class kNN_parallel:
         allDistances = self.__computeDistances(dataset, conju)
 
         # For each instance with missing values
-        starttime = time.time()
         processes = []
         for i in range(self.n):
             p = multiprocessing.Process(target=self.__par, args=(dataset, allDistances, i, k, queue))

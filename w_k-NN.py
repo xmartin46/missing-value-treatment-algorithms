@@ -1,12 +1,6 @@
 import copy
-import time
 import math
-import random
-import multiprocessing
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 
 # ******************************** CLASSES ***********************************
 class wNN:
